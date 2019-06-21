@@ -1,3 +1,7 @@
+# Build folders.
+build
 Debug
 Release
-JA_Unlimited.pro.user
+
+# Unnecessary Qt files.
+JA_Unlimited.pro.user*

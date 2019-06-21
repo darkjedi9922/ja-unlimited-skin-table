@@ -10,7 +10,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = JA_Unlimited
 TEMPLATE = app
-
+LIBS += -lz
 
 SOURCES += main.cpp\
     MainWindow.cpp \
@@ -26,6 +26,7 @@ SOURCES += main.cpp\
     includes/JMargins.cpp \
     includes/JLabel.cpp \
     TeamColorLabel.cpp \
+    qzip/qzip.cpp
 
 HEADERS  += MainWindow.h \
     SkinsWindow.h \
@@ -40,9 +41,11 @@ HEADERS  += MainWindow.h \
     includes/JMargins.h \
     includes/JLabel.h \
     TeamColorLabel.h \
+    qzip/zlib/zconf.h \
+    qzip/zlib/zlib.h \
+    qzip/qzipreader_p.h \
+    qzip/qzipwriter_p.h
 
 RESOURCES += resources.qrc
 
 RC_ICONS = icon.ico
-
-include(qzip.pri)

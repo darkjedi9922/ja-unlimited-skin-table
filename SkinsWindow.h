@@ -8,7 +8,7 @@
 #include "includes/JTableView.h"
 #include "includes/JHScrollBar.h"
 #include "TeamColorLabel.h"
-#include "qzipreader_p.h"
+#include "qzip/qzipreader_p.h"
 
 class SkinsWindow : public QWidget
 {
